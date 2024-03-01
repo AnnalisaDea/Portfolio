@@ -1,0 +1,251 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  color: #231f20;
+}
+
+#back-top {
+  position: fixed;
+  bottom: 0;
+  right: 16px;
+}
+#back-top i {
+  font-size: 1rem;
+  color: #fce373;
+}
+
+#back-top:hover i {
+  color: #231f20;
+}
+
+.button {
+  background-color: #231f20;
+  border-radius: 2rem;
+  color: #fce373;
+  border: solid #231f20 1px;
+  display: block;
+  margin: 32px auto;
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fce373;
+  color: #231f20;
+  border: solid #231f20 1px;
+}
+
+.topnav {
+  background-color: #fce373;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.topnav .menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.topnav .menu ul li {
+  display: inline;
+}
+.topnav .menu ul a {
+  padding-right: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.home-hero {
+  height: 40vh;
+  background: #fce373;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.home-hero .text-hero {
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -10px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  background-color: #cca69a;
+}
+#about img {
+  height: 100vh;
+}
+#about .text-about {
+  padding: 0 10vw;
+}
+#about .text-about .headline {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+#about .text-about .headline h3 {
+  position: relative;
+  left: 20px;
+}
+#about .text-about .body p {
+  margin-bottom: 32px;
+}
+
+#works {
+  background-color: #f37449;
+  padding: 10vh 0px;
+  text-align: center;
+}
+#works .headline {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+#works .img-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#works .img-works img {
+  width: 40vW;
+  object-fit: cover;
+  border: #f37449 solid 3px;
+}
+
+#contact {
+  background-color: #a385bd;
+  padding: 10vw;
+}
+#contact .headline {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+#contact .form-contact {
+  width: 50vw;
+  display: block;
+  margin: auto;
+}
+#contact .form-contact input[type=text], #contact .form-contact input[type=email], #contact .form-contact textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #fce373;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer ul li {
+  display: inline;
+}
+.footer ul i {
+  padding: 0 16px 32px 16px;
+  font-size: 2rem;
+}
+.footer ul i:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 576px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topnav .menu {
+    margin-top: 32px;
+    justify-content: space-between;
+  }
+  .topnav .menu ul li a {
+    font-size: 1rem;
+  }
+  .home-hero {
+    height: 30vh;
+  }
+  .home-hero .text-hero {
+    font-size: 2.5rem;
+    letter-spacing: -3px;
+    line-height: 5rem;
+  }
+  #about {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #about img {
+    width: 100vW;
+    height: auto;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .home-hero .text-hero {
+    font-size: 3.5rem;
+    letter-spacing: -4px;
+    line-height: 5rem;
+  }
+  #about {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #about img {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0 20%;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .home-hero .text-hero {
+    font-size: 4.5rem;
+    letter-spacing: -5px;
+    line-height: 5rem;
+  }
+  #about {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #about img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0 10%;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #works .img-works img,
+  #works .content-more img {
+    width: 80vW;
+  }
+  #contact .form-contact {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
