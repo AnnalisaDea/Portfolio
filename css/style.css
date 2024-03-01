@@ -77,6 +77,21 @@ html {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -10px;
+  overflow: hidden;
+}
+.home-hero .text-hero span {
+  display: inline-block;
+  transition: transform 1.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+.home-hero .text-hero span:first-child {
+  transform: translateY(-200%);
+}
+.home-hero .text-hero span:last-child {
+  transform: translateY(200%);
+}
+.home-hero .text-hero.showText span {
+  transform: translateY(0%);
 }
 
 #about {

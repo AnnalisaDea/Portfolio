@@ -94,7 +94,7 @@ html{
     
 }
 
-.home-hero{
+.home-hero {
     height: 40vh;
     background: $background-color1;
     display: flex;
@@ -106,6 +106,28 @@ html{
         text-transform: uppercase;
         text-align: center;
         letter-spacing: -10px;
+
+        overflow: hidden; // Nasconde il testo che va oltre i limiti dell'elemento
+
+        span {
+            display: inline-block; // Per consentire la trasformazione
+            transition: transform 1.5s ease-in-out; // Definisce la transizione
+            transition-delay: 0.5s;
+        }
+
+        // Nasconde inizialmente entrambi i span fuori dalla vista
+        span:first-child {
+            transform: translateY(-200%);
+        }
+
+        span:last-child {
+            transform: translateY(200%);
+        }
+
+        // Regola per mostrare il testo quando l'elemento è visibile
+        &.showText span {
+            transform: translateY(0%);
+        }
     }
 }
 

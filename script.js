@@ -40,6 +40,11 @@ function activeChips(e) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    //Aggiungi la classe "show" e fai partire l'animazione
+    var textHero = document.querySelector('.text-hero');
+    textHero.classList.add('showText');
+
+
     // Mostra il pulsante per tornare in cima alla pagina
     window.addEventListener('scroll', scrollUp);
 
