@@ -107,6 +107,23 @@ html {
   padding: 10vh 0px;
   text-align: center;
 }
+#works .chips {
+  background-color: #f37449;
+  border: solid #231f20 1.5px;
+  border-radius: 2rem;
+  color: #231f20;
+  margin: 16px 10.6666666667px;
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#works .chips.active,
+#works .chips:hover {
+  background-color: #fce373;
+  border: solid #fce373 1.5px;
+}
 #works .headline {
   font-weight: 600;
   text-align: center;
@@ -202,6 +219,11 @@ html {
     height: auto;
     margin-bottom: 32px;
   }
+  #works .chips {
+    margin: 16px 0px;
+    padding: 10.6666666667px 16px;
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .home-hero .text-hero {
@@ -219,6 +241,10 @@ html {
     object-fit: cover;
     object-position: 0 20%;
     margin-bottom: 32px;
+  }
+  #works .chips {
+    margin: 16px 8px;
+    padding: 12.8px 21.3333333333px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {

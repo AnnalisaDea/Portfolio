@@ -140,23 +140,44 @@ html{
 }
 
 #works {
-    background-color: $background-color3; 
+    background-color: $background-color3;
     padding: 10vh 0px;
     text-align: center;
 
-    .headline{
-        font-weight:  $font-semibold;
+    .chips {
+        background-color: $background-color3;
+        border: solid $button-color 1.5px;
+        border-radius: 2rem;
+        color: $font-color;
+
+        margin: calc($spacer / 2) calc($spacer / 3);
+        padding: calc($spacer / 2) $spacer;
+
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .chips.active,
+    .chips:hover {
+        background-color: $background-color1;
+        border: solid $background-color1 1.5px;
+    }
+
+    .headline {
+        font-weight: $font-semibold;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: $spacer;
     }
 
-    .img-works{
+    .img-works {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
-        img{
+        img {
             width: 40vW;
             object-fit: cover;
             border: $background-color3 solid 3px;
@@ -237,15 +258,17 @@ html{
             }
         }
     }
+
     .home-hero {
         height: 30vh;
+
         .text-hero {
             font-size: 2.5rem;
             letter-spacing: -3px;
             line-height: 5rem;
         }
     }
-    
+
     #about {
         flex-direction: column;
         flex-wrap: wrap;
@@ -255,11 +278,19 @@ html{
             height: auto;
             margin-bottom: $spacer;
         }
-    }  
+    }
 
+    #works {
+        .chips {
+            margin: calc($spacer/2) 0px;
+            padding: calc($spacer/3) calc($spacer/2);
+            font-size: 10px;
+        }
+    }
 }
 
-@media screen and (min-width:576px) and (max-width:768px){
+
+@media screen and (min-width:576px) and (max-width:768px) {
     .home-hero {
 
         .text-hero {
@@ -268,6 +299,7 @@ html{
             line-height: 5rem;
         }
     }
+
     #about {
         flex-direction: column;
         flex-wrap: wrap;
@@ -280,7 +312,15 @@ html{
             margin-bottom: $spacer;
         }
     }
+
+    #works {
+        .chips {
+            margin: calc($spacer/2) calc($spacer/4);
+            padding: calc($spacer/2.5) calc($spacer/1.5);
+        }
+    }
 }
+
 
 @media screen and (min-width:768px) and (max-width:1000px) {
     .home-hero {
@@ -290,6 +330,7 @@ html{
             line-height: 5rem;
         }
     }
+
     #about {
         flex-direction: column;
         flex-wrap: wrap;
@@ -304,9 +345,11 @@ html{
     }
 }
 
+
 @media screen and (max-width:1000px) {
 
     #works {
+
         .img-works,
         .content-more {
             img {
@@ -321,6 +364,5 @@ html{
         }
     }
 }
-
 
 
