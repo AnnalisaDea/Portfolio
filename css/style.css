@@ -230,8 +230,10 @@ html {
     flex-wrap: wrap;
   }
   #about img {
-    width: 100vW;
-    height: auto;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0 -10px;
     margin-bottom: 32px;
   }
   #works .chips {
@@ -254,7 +256,7 @@ html {
     height: 70vh;
     width: 100vw;
     object-fit: cover;
-    object-position: 0 20%;
+    object-position: 0 -15px;
     margin-bottom: 32px;
   }
   #works .chips {
@@ -273,10 +275,10 @@ html {
     flex-wrap: wrap;
   }
   #about img {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     object-fit: cover;
-    object-position: 0 10%;
+    object-position: 0 0;
     margin-bottom: 32px;
   }
 }
