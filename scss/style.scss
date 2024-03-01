@@ -23,16 +23,18 @@ html{
     color: $font-color;
 }
 
-#back-top{
+#back-top {
+    display: none;
     position: fixed;
     bottom: 0;
     right: calc($spacer / 2);
-    
-    i{
+
+    i {
         font-size: 1rem;
         color: $text-button-color;
     }
 }
+
 #back-top:hover {
     i {
         color: $font-color;
