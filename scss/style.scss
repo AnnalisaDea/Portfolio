@@ -48,12 +48,9 @@ html{
     border: solid $button-color 1px;
 
     display: block;
-
     margin: $spacer auto;
     padding: calc($spacer / 2) $spacer;
 
-
-    text-align: center;
     font-weight: $font-semibold;
     text-transform: uppercase;
 
@@ -175,7 +172,6 @@ html{
         margin: calc($spacer / 2) calc($spacer / 3);
         padding: calc($spacer / 2) $spacer;
 
-        text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         cursor: pointer;
@@ -189,7 +185,6 @@ html{
 
     .headline {
         font-weight: $font-semibold;
-        text-align: center;
         text-transform: uppercase;
         margin-bottom: $spacer;
     }
@@ -202,7 +197,7 @@ html{
         img {
             width: 40vW;
             object-fit: cover;
-            border: $background-color3 solid 3px;
+            margin: 3px;
         }
     }
 }
@@ -225,7 +220,6 @@ html{
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
-            display: inline-block;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
@@ -273,7 +267,6 @@ html{
 
         .menu {
             margin-top: $spacer;
-            justify-content: space-between;
 
             ul li a {
                 font-size: 1rem;
@@ -292,7 +285,6 @@ html{
     }
 
     #about {
-        flex-direction: column;
         flex-wrap: wrap;
 
         img {
@@ -325,7 +317,6 @@ html{
     }
 
     #about {
-        flex-direction: column;
         flex-wrap: wrap;
 
         img {
@@ -356,7 +347,6 @@ html{
     }
 
     #about {
-        flex-direction: column;
         flex-wrap: wrap;
 
         img {

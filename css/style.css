@@ -31,7 +31,6 @@ html {
   display: block;
   margin: 32px auto;
   padding: 16px 32px;
-  text-align: center;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
@@ -129,7 +128,6 @@ html {
   color: #231f20;
   margin: 16px 10.6666666667px;
   padding: 16px 32px;
-  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -141,7 +139,6 @@ html {
 }
 #works .headline {
   font-weight: 600;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -153,7 +150,7 @@ html {
 #works .img-works img {
   width: 40vW;
   object-fit: cover;
-  border: #f37449 solid 3px;
+  margin: 3px;
 }
 
 #contact {
@@ -175,7 +172,6 @@ html {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -212,7 +208,6 @@ html {
   }
   .topnav .menu {
     margin-top: 32px;
-    justify-content: space-between;
   }
   .topnav .menu ul li a {
     font-size: 1rem;
@@ -226,7 +221,6 @@ html {
     line-height: 5rem;
   }
   #about {
-    flex-direction: column;
     flex-wrap: wrap;
   }
   #about img {
@@ -249,7 +243,6 @@ html {
     line-height: 5rem;
   }
   #about {
-    flex-direction: column;
     flex-wrap: wrap;
   }
   #about img {
@@ -271,7 +264,6 @@ html {
     line-height: 5rem;
   }
   #about {
-    flex-direction: column;
     flex-wrap: wrap;
   }
   #about img {
